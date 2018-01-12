@@ -19,9 +19,11 @@ function Jukebox() {
 
     this.choice1 = function( x ){
         if(x==1){
+          // document.getElementById("now").innerHTML = "<h1>Hi</h1>";
             document.getElementById('aP').src= "album/naked.jpg";
             song=new Audio ("audio/James_Arthur_Naked.mp3");
             this.play();
+
         }
         else if(x==2){
             document.getElementById('aP').src= "album/newrules.jpg";
@@ -50,43 +52,6 @@ function Jukebox() {
         }
     }
 }
-
-// ------------ Spinning Record ----------
-var spinControl;        // controls timer (stops when cleared)
-var degrees = 1;        // Keeps track of records current degree
-var isSpinning = false;
-// Starts the timed function to rotate record div
-function spinTheRecord(){
-    var record = document.getElementById("record");
-    console.log("Begin spinning");
-    if(!isSpinning)  // remove if for funny effect   :) *tap play alot*
-        spinControl = setInterval(rotateFunction, 10, record);
-    isSpinning = true;
-}
-
-// Called every 10milliseconds to rotate div 1 degree
-function rotateFunction(recordElem){
-    console.log("Currently spinning");
-    recordElem.style.transform = "rotate(" +degrees+ "deg)";
-    degrees++;
-    degrees = degrees%360;
-}
-
-// Stops the record div from spinning
-function stopTheRecord(){
-    console.log("Stop spinning");
-    clearInterval(spinControl); // timer control is stopped
-    isSpinning = false;
-}
-
-// Sets record to 0degree rotation (for new record effect)
-function resetRecord(){
-    var record = document.getElementById("record");
-    degrees=0;
-    record.style.transform = "rotate("+degrees+"deg)";
-}
-
-// ============================================
 
 // Create a Jukebox instance
  var jb = new Jukebox();
@@ -127,3 +92,41 @@ function choice(x)
     jb.choice1(x);
     spinTheRecord();
  }
+
+
+// ------------ Spinning Record ----------
+var spinControl;        // controls timer (stops when cleared)
+var degrees = 1;        // Keeps track of records current degree
+var isSpinning = false;
+// Starts the timed function to rotate record div
+function spinTheRecord(){
+    var record = document.getElementById("record");
+    console.log("Begin spinning");
+    if(!isSpinning)  // remove if for funny effect   :) *tap play alot*
+        spinControl = setInterval(rotateFunction, 10, record);
+    isSpinning = true;
+}
+
+// Called every 10milliseconds to rotate div 1 degree
+function rotateFunction(recordElem){
+    console.log("Currently spinning");
+    recordElem.style.transform = "rotate(" +degrees+ "deg)";
+    degrees++;
+    degrees = degrees%360;
+}
+
+// Stops the record div from spinning
+function stopTheRecord(){
+    console.log("Stop spinning");
+    clearInterval(spinControl); // timer control is stopped
+    isSpinning = false;
+}
+
+// Sets record to 0degree rotation (for new record effect)
+function resetRecord(){
+    var record = document.getElementById("record");
+    degrees=0;
+    record.style.transform = "rotate("+degrees+"deg)";
+}
+
+// ============================================

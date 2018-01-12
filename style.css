@@ -1,12 +1,15 @@
-
+h1 {
+	color:black;
+}
 body {
-	background-color:#0EFF56;
+	background-color:white;
 }
 
 #record{
+	/*border-radius:50px;*/
 	position: absolute;
 	left: 15%;
-	top:240px;
+	top:220px;
 }
 
 table:hover {
@@ -74,18 +77,22 @@ th{
     text-align: left;
     border-bottom: 1px solid black;
     padding: 3px;
-    background-color: #2d2d2d;
-    color: green;
+    background-color: white;
+    /*#2d2d2d;*/
+    color: black;
 }
 
 td{
-    font-family: tahoma;
+    font-family: sans-serif;
     font-size: 14px;
     padding:   5px 10px 5px 10px;
-    background-color: #cccccc;
+    background-color: white;
+    /*font-weight: bold;*/
+    /*color: black;*/
+    /*#cccccc;*/
 }
 tr:hover{
-    color: green;
+    color: blue;
 }
 
  #time{
