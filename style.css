@@ -25,6 +25,7 @@ table:hover {
 .btn .btn-primary {
 	width: 30px;
 	height: 20px;
+
 }
 .album-cover {
 	border: 1px solid;
@@ -38,7 +39,7 @@ table:hover {
 	text-align: center;
 }*/
 .colorC:hover{
-	color: black;
+
 }
 
 .playlist-content {
