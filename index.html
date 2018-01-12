@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body>
+    <div class="container-fluid">
+    <img id="aP" class="albumI album-cover" src="album/samSmith1.jpg">
+  
+
+        <div id="buttons">
+        
+        	<button class="btn btn-primary colorC" id="b1" onclick="playSong()">
+        		<span class="glyphicon glyphicon-play"></span></button>
+        	<button class= "btn btn-primary" id="b2" onclick="pauseSong()"><span class="glyphicon glyphicon-pause"></span></button>
+        	<button class= "btn btn-primary"id="b2" onclick="stopSong()">
+        		<span class="glyphicon glyphicon-stop"></span></button>
+
+        </div>
+
+<div class="pointer playlist-content">
+	<table>
+	  <tr class="pointer">
+	    <th>Playlist</th>
+	    <th>Artist</th>
+	    <th>Time</th>
+	  </tr>
+	  <tr>
+	    <td onclick="choice(1)">Naked</td>
+	    <td onclick="choice(1)">James Arthur</td>
+	    <td onclick="choice(1)">4:02</td>
+	  </tr>
+	  <tr>
+	    <td onclick="choice(2)">New Rules</td>
+	    <td onclick="choice(2)">Dua Lipa</td>
+	    <td onclick="choice(2)">3:28</td>
+	  </tr>
+	  <tr>
+	    <td onclick="choice(3)">Pretty Hurts</td>
+	    <td onclick="choice(3)">Beyonce</td>
+	    <td onclick="choice(3)">4:16</td>
+	  </tr>
+	    <tr>
+	    <td onclick="choice(4)">Darte Un Beso</td>
+	    <td onclick="choice(4)">Prince Royce</td>
+	    <td onclick="choice(4)">3:30</td>
+	  </tr>
+	    <tr>
+	    <td onclick="choice(5)">Latch</td>
+	    <td onclick="choice(5)">Disclosure ft. Sam Smith</td>
+	    <td onclick="choice(5)">4:16</td>
+	  </tr>
+	    <tr>
+	    <td onclick="choice(6)">Figures</td>
+	    <td onclick="choice(6)">Jessie Reyez</td>
+	    <td onclick="choice(6)">4:00</td>
+	  </tr>
+	</table>
+</div>
+
+
+        <script src="main.js"></script>
+    </div>
+    </body>
+</html>

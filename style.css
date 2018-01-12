@@ -1,0 +1,85 @@
+
+body {
+	background-color:#0EFF56;
+}
+
+
+table:hover {
+	cursor:pointer;
+}
+
+.fix {
+
+}
+
+.albumI {
+/*	border-radius: 50%;*/
+/*	border: 1px solid;*/
+	/*margin: 0 auto;*/
+}
+
+#buttons {
+	text-align: center;
+	margin: 20px;
+}
+.btn .btn-primary {
+	width: 30px;
+	height: 20px;
+}
+.album-cover {
+	border: 1px solid;
+	width:300px;
+	height:300px;
+	position:relative;
+	left:100px;
+
+}
+/*img{
+	text-align: center;
+}*/
+.colorC:hover{
+	color: black;
+}
+
+.playlist-content {
+/*	border: 1px solid;*/
+	text-align:justify;
+
+}
+
+.container-fluid {
+	width:500px;
+	position:relative;
+	top:100px;
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    /* border:  1px solid black; */
+/*    border-left: 1px solid black;*/
+}
+
+th{
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    background-color: #2d2d2d;
+    color: green;
+}
+
+td{
+    font-family: tahoma;
+    font-size: 14px;
+    padding:   5px 10px 5px 10px;
+    background-color: #cccccc;
+}
+tr:hover{
+    color: green;
+}
+
+ #time{
+     text-align: right;
+ }
