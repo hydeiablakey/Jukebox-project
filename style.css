@@ -6,6 +6,7 @@ body {
 #record{
 	position: absolute;
 	left: 15%;
+	top:240px;
 }
 
 table:hover {
@@ -56,6 +57,7 @@ table:hover {
 	width:500px;
 	position:relative;
 	top:100px;
+	/*border:3px;*/
 
 }
 
